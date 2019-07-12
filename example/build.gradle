@@ -1,0 +1,11 @@
+buildscript {
+  dependencies {
+    classpath files('../build/libs/trial-gradle-plugin.jar')
+  }
+}
+
+apply plugin: 'com.github.shinsuke-mat.hello'
+
+hello {
+  value = 'xxx'
+}
