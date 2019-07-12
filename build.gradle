@@ -6,4 +6,4 @@ dependencies {
   compile localGroovy()
 }
 
-jar.baseName = 'tirla-gradle-plugin'
+jar.baseName = 'tiral-gradle-plugin'
