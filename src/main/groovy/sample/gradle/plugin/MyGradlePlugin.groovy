@@ -8,7 +8,9 @@ class MyGradlePlugin implements Plugin<Project> {
     @Override
     void apply(Project project) {
         project.task('hello') {
-            println 'Hello My Gradle Plugin!!'
+        
+            project.extensions.create('hello', MyGradlePluginConfiguration);
+            println "Hello My Gradle Plugin!! value = ${project.hello.value}"
         }
     }
 }
